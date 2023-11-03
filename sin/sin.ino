@@ -7,6 +7,7 @@ volatile const uint16_t duty[32] = {408 , 812 , 1209, 1594, 1964, 2315, 2643, 29
                                     4167, 4146, 4086, 3987, 3849, 3674, 3464, 3221,
                                     2946, 2643, 2315, 1964, 1594, 1209, 812 , 408 };
 volatile uint8_t i = 0;
+
 void setup() {
   pinMode(9, OUTPUT);
   digitalWrite(9, LOW);
