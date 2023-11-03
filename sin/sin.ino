@@ -16,7 +16,7 @@ void setup() {
   TCCR1A = 0x00 | ((1 << WGM11) | (1 << COM1A1)); // Fast PWM Mode 14, OC1A connected
   TCCR1B = 0x00 | ((1 << WGM13) | (1 << WGM12));  // Fast PWM Mode 14
   TIMSK1 = 0x00 | (1 << TOIE1);                   // Enable Timer 1 Overflow Interrupt
-  ICR1 = period;                                  // 1920 Hz
+  ICR1 = period;                                  
   OCR1A = duty[0];
   OCR1B = duty[0];
   TCNT1 = 1;
